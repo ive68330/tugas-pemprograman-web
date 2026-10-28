@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Profil Pribadi</title>
 </head>
 
@@ -13,80 +14,147 @@
         <h2>Sistem Informasi</h2>
     </header>
     
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">IVE KEREN</a>
+
+            <ul class="navbar-menu">
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#Tentang">Tentang Saya</a></li>
+                <li><a href="#Pendidikan">Pendidikan</a></li>
+                <li><a href="#Keahlian">Keahlian</a></li>
+                <li><a href="#Kontak">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+    
     <main>
 
-        <section>
+        <section id="Tentang">
             <h2>Tentang Saya</h2>
-                <li>Halo, Perkenalkan saya Tegar Iveco Arasheha seorang mahasiswa</li>
-                <li>Universitas Dian Nuswantoro, bidang kejurusan saya adalah Sistem Informasi.</li>
-                <li>Saya tertarik untuk mempelajari teknologi dan manajemen bisnis. Saya berpengalaman di bidang Troubleshooting</li>
-                <li>Memperbaiki Laptop, PC. Saya Lulusan dari SMK Garuda Nusantara Selama 3 Tahun bersekolah di sana.</li>
+                <P>
+                    Halo, Perkenalkan saya Tegar Iveco Arasheha, saya seorang mahasiswa
+                    Universitas Dian Nuswantoro, bidang kejurusan saya adalah Sistem Informasi. 
+                </P>
+
+                <p>
+                    Saya tertarik mempelajari teknologi, pengembangan game,
+                    dan manajemen bisnis. Saya juga memiliki pengalaman dalam
+                    troubleshooting serta perbaikan laptop dan PC.
+                </p>
+                <p>
+                    Saya merupakan lulusan SMK Garuda Nusantara dan ingin terus
+                    mengembangkan keterampilan di bidang teknologi informasi.
+                </p>
         </section>
 
-        <section>
+        <section id="Pendidikan">
             <h2>Riwayat Pendidikan</h2>
 
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Jenjang</th>
-                        <th>Nama Institusi</th>
-                        <th>Tahun</th>
-                    </tr>
-                </thead>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Jenjang</th>
+                            <th>Nama Institusi</th>
+                            <th>Tahun</th>
+                        </tr>
+                    </thead>
 
-                <tbody>
-                    <tr>
-                        <td>SD</td>
-                        <td>SD Negeri Rejosari 1</td>
-                        <td>Tahun 2013 - 2019</td>
-                    </tr>
+                    <tbody>
+                        <tr>
+                            <td>SD</td>
+                            <td>SD Negeri Rejosari 1</td>
+                            <td>2013–2019</td>
+                        </tr>
 
-                    <tr>
-                        <td>SMP</td>
-                        <td>SMP Negeri 1 Karangawen</td>
-                        <td>Tahun 2019 - 2022</td>
-                    </tr>
+                        <tr>
+                            <td>SMP</td>
+                            <td>SMP Negeri 1 Karangawen</td>
+                            <td>2019–2022</td>
+                        </tr>
 
-                    <tr>
-                        <td>SMK</td>
-                        <td>SMK Garuda Nusantara</td>
-                        <td>Tahun 2022 - 2025</td>
-                    </tr>
+                        <tr>
+                            <td>SMK</td>
+                            <td>SMK Garuda Nusantara</td>
+                            <td>2022–2025</td>
+                        </tr>
 
-                    <tr>
-                        <td>S1</td>
-                        <td>Universitas Dian Nuswantoro</td>
-                        <td>2025 - Sekarang</td>
-                    </tr>
-                </tbody>
-            </table>
+                        <tr>
+                            <td>S1</td>
+                            <td>Universitas Dian Nuswantoro</td>
+                            <td>2025–Sekarang</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
-        <section>
-            <h2>Keahlian</h2>
-            <ul>
-                <li>Developer</li>
-                <li>Perbaikan dan Troubleshooting Device</li>
-            </ul>
+        <section id="Keahlian">
+            <h2>Keahlian Saya</h2>
+
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>🎮 Game Development</h3>
+                    <p>
+                        Tertarik pada pengembangan game dan pembuatan
+                        permainan interaktif.
+                    </p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>💻 Troubleshooting Device</h3>
+                    <p>
+                        Memiliki pengalaman dalam memeriksa dan memperbaiki
+                        masalah pada laptop dan PC.
+                    </p>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>Kontak</h2>
+        <section id="Kontak">
+            <h2>Hubungi Saya</h2>
 
-            <ul>
-                <li>Email: 112202507322@mhs.dinus.ac.id</li>
-                <li>Instagram: @tegararasheha</li>
-                <li>GitHub: ive68330</li>
-            </ul>
+            <p>
+                Tertarik berdiskusi tentang teknologi, pengembangan game,
+                atau komputer? Kamu dapat menghubungi saya melalui:
+            </p>
+
+            <div class="contact-container">
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <p>
+                        <a href="mailto:112202507322@mhs.dinus.ac.id">112202507322@mhs.dinus.ac.id</a>
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Instagram</h3>
+                    <p>
+                        <a href="https://www.instagram.com/tegararasheha/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                            @tegararasheha
+                        </a>
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>GitHub</h3>
+                    <p>
+                        <a href="https://github.com/ive68330"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                            ive68330
+                        </a>
+                    </p>
+                </div>
+            </div>
         </section>
 
+        <footer>
+            <p>&copy; 2026 Tegar Iveco Arasheha. All Rights Reserved.</p>
+        </footer>
     </main>
-
-    <footer>
-        <p>&copy; 2026 Tegar Iveco Arasheha. All Rights Reserved.</p>
-    </footer>
-
 </body>
-
 </html>

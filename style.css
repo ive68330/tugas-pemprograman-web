@@ -1,0 +1,367 @@
+/* ===================================
+   1. Pengaturan Dasar
+=================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fc;
+    color: #243047;
+    line-height: 1.7;
+}
+
+/* ===================================
+   2. Header
+=================================== */
+
+header {
+    background: linear-gradient(135deg, #102a56, #2563eb);
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+header h2 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: #dbeafe;
+}
+
+/* ===================================
+   3. Konten Utama
+=================================== */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+/* ===================================
+   4. Bagian Profil
+=================================== */
+
+section {
+    background-color: white;
+    padding: 28px;
+    margin-bottom: 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(15, 35, 70, 0.07);
+}
+
+section h2 {
+    color: #1d4ed8;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #dbeafe;
+}
+
+/* ===================================
+   5. Tabel Pendidikan
+=================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #1d4ed8;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+tbody tr:hover {
+    background-color: #dbeafe;
+}
+
+/* ===================================
+   6. Daftar Keahlian dan Kontak
+=================================== */
+
+ul {
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===================================
+   7. Footer
+=================================== */
+
+footer {
+    background-color: #102a56;
+    color: white;
+    text-align: center;
+    padding: 22px 15px;
+}
+
+/* ===================================
+   8. Responsive Design
+=================================== */
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 28px 15px;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    section h2 {
+        font-size: 1.3rem;
+    }
+
+    table {
+        font-size: 0.85rem;
+    }
+
+    th,
+    td {
+        padding: 8px 6px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.45rem;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 16px;
+    }
+
+    table {
+        font-size: 0.75rem;
+    }
+
+    th,
+    td {
+        padding: 6px 4px;
+        overflow-wrap: anywhere;
+    }
+}
+
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff;
+    padding: 15px 5%;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-brand {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #1d4ed8;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    list-style: none;
+}
+
+.navbar-menu a {
+    color: #243047;
+    font-weight: 600;
+}
+
+.navbar-menu a:hover {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+/* Navbar pada layar HP */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 15px 4%;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar-menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+    }
+
+    .navbar-menu a {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Kartu Keahlian */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #f1f5f9;
+    padding: 22px;
+    border-radius: 12px;
+    border-left: 4px solid #2563eb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card h3 {
+    color: #1d4ed8;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.skill-card p {
+    color: #475569;
+}
+
+/* Efek saat kursor diarahkan ke kartu */
+.skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(15, 35, 70, 0.1);
+}
+
+/* Tampilan kartu di HP */
+@media screen and (max-width: 600px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Bagian Kontak */
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.contact-card {
+    padding: 20px;
+    background-color: #f1f5f9;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+.contact-card h3 {
+    color: #1d4ed8;
+    margin-bottom: 8px;
+}
+
+.contact-card a {
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+.contact-card a:hover {
+    color: #1e40af;
+}
+
+/* Kontak pada tablet dan HP */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Membuat tabel pendidikan responsif */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 15px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-responsive table {
+    width: 100%;
+    min-width: 420px;
+    border-collapse: collapse;
+}
+
+.table-responsive th,
+.table-responsive td {
+    padding: 12px;
+    overflow-wrap: normal;
+    word-break: normal;
+}
+
+/* Penyesuaian untuk HP */
+@media screen and (max-width: 480px) {
+    .table-responsive th,
+    .table-responsive td {
+        padding: 10px 8px;
+        font-size: 0.8rem;
+    }
+}
